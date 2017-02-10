@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bkg"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_home_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon2" />
+
+        <com.zhenquan.telephonesafe.view.MarqueeTextView
+            android:id="@+id/tv_marquee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_home_logo"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="~~~~~~~~~~~~我是小强广告~~~~~~~~~~~~~~~~~~~~~~~~" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/iv_home_logo"
+            android:singleLine="true"
+            android:text="老实管家"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+       
+    </RelativeLayout>
+
+    <GridView
+        android:layout_weight="1"
+        android:id="@+id/home_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:numColumns="2"
+        android:verticalSpacing="3dp" />
+    
+   
+		
+</LinearLayout>

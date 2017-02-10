@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhenquan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="常用工具" />
+ <com.zhenquan.telephonesafe.view.SettingItemView
+     android:id="@+id/siv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zhenquan:enable="false"
+        zhenquan:title="号码归属地查询"
+        zhenquan:bg_type="first"
+        android:layout_marginTop="15dp"
+        >
+        </com.zhenquan.telephonesafe.view.SettingItemView>
+        
+<com.zhenquan.telephonesafe.view.SettingItemView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zhenquan:enable="false"
+        zhenquan:title="常用号码查询"
+        zhenquan:bg_type="last"
+        android:id="@+id/siv_normalNumber"
+        
+        >
+        </com.zhenquan.telephonesafe.view.SettingItemView>
+        
+<com.zhenquan.telephonesafe.view.SettingItemView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zhenquan:enable="false"
+        zhenquan:title="程序锁管理"
+        zhenquan:bg_type="first"
+        android:layout_marginTop="15dp"
+         android:id="@+id/siv_appLock"
+        
+        >
+        </com.zhenquan.telephonesafe.view.SettingItemView>
+        
+<com.zhenquan.telephonesafe.view.SettingItemView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zhenquan:enable="true"
+        android:id="@+id/siv_watchdog"
+        zhenquan:title="开启电子狗服务"
+        zhenquan:bg_type="last"
+        >
+        </com.zhenquan.telephonesafe.view.SettingItemView>
+</LinearLayout>

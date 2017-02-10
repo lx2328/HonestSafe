@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+    <TextView
+        android:padding="5dp"
+        android:textColor="#000"
+        android:background="#9c9c9c"
+        android:id="@+id/tv_location_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择归属地样式"
+        />
+	<ListView
+	    android:listSelector="@drawable/selector_list_location"
+	    android:dividerHeight="1dp"
+	    android:divider="#9c9c9c"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/lv_location_dialog"
+	    />
+</LinearLayout>

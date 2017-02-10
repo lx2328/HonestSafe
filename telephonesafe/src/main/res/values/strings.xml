@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">老实管家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_cooman_tool">CoomanToolActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_normal_num_activty">NormalNumActivty</string>
+    <string name="title_activity_process_manager">ProcessManagerActivity</string>
+    <string name="title_activity_app_lock_activty">AppLockActivty</string>
+    <string name="title_activity_watch_dog">WatchDogActivity</string>
+    <string name="title_activity_dog_watch_activty">DogWatchActivty</string>
+    <string name="title_activity_antvirtus">AntvirtusActivity</string>
+    <string name="title_activity_password">PasswordActivity</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <item name="android:windowNoTitle">true</item>
+    </style>
+	<style name="style_splash" >
+	    <item name="android:windowNoTitle">true</item>
+	     <item name="android:windowFullscreen">true</item>
+	</style>
+	<style name="Title" parent="android:Widget.Holo.Light.TextView">
+		<item name="android:background">#5AAAD6</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:textColor">#fff</item>
+		<item name="android:textSize">22sp</item>
+		<item name="android:height">48dp</item>
+	</style>
+	 <style name="style_location_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowAnimationStyle">@style/style_location_animation</item>
+    </style> 
+    
+	 <style name="style_location_animation">
+	        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+	     </style>
+</resources>

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.zhenquan.telephonesafe"
+        minSdkVersion 15
+        targetSdkVersion 20
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile project(':main')
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.7.0.jar')
+}

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手机杀毒" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_antivirtus_scan"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/blue"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/arc_progress"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                custom:arc_bottom_text="扫描中"
+                custom:arc_stroke_width="10dp"
+                custom:arc_text_color="#fff" />
+
+            <TextView
+                android:id="@+id/tv_antivirus_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaa"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_antivirtus_result"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_antivirus_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_antivirus_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_bg"
+                android:text="重新扫描"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_opendoor_anim"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_animaLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_animaRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_shadu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
